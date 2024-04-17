@@ -10,7 +10,7 @@ const DataGrid = () => {
     // Adjust this URL to where your API is hosted and the correct endpoint
     const fetchUserData = async () => {
         try {
-            const response = await axios.get('http://localhost:1234/user/users');
+            const response = await axios.get('https://enigmaescape-backend.onrender.com/user/users');
             setUserData(response.data);
         } catch (error) {
             console.error("There was an error fetching the user data:", error);

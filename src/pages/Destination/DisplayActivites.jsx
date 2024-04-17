@@ -12,7 +12,7 @@ const DisplayActivities = () => {
     useEffect(() => {
         const fetchActivities = async () => {
             try {
-                const response = await axios.get('http://localhost:1234/Activity');
+                const response = await axios.get('https://enigmaescape-backend.onrender.com/Activity');
                 const activitiesData = response.data.data.map(activity => ({
                     city: activity.city,
                     name: activity.name,
@@ -35,7 +35,7 @@ const DisplayActivities = () => {
 
     const handleDelete = async (id) => {
         try {
-            await axios.delete(`http://localhost:1234/Activity/${id}`);
+            await axios.delete(`https://enigmaescape-backend.onrender.com/Activity/${id}`);
             const updatedActivities = activities.filter(activity => activity.id !== id);
             setActivities(updatedActivities);
             console.log('Successfully deleted activity with ID:', id);

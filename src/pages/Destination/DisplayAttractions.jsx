@@ -17,7 +17,7 @@ const DisplayAttractions = () => {
     useEffect(() => {
         const fetchAttractions = async () => {
             try {
-                const response = await axios.get(`http://localhost:1234/Attraction?page=${page}&pageSize=${pageSize}`);
+                const response = await axios.get(`https://enigmaescape-backend.onrender.com/Attraction?page=${page}&pageSize=${pageSize}`);
                 console.log('Attractions data:', response.data);
                 
                 const attractionsData = response.data.data.map(attraction => {
@@ -56,7 +56,7 @@ const DisplayAttractions = () => {
             console.log('Attrction ID:', id); // Log the hotel ID
     
             // Send delete request to delete the hotel
-            const response = await axios.delete(`http://localhost:1234/attraction/${id}`);
+            const response = await axios.delete(`https://enigmaescape-backend.onrender.com/attraction/${id}`);
             
             // Check if the delete request was successful
             if (response.status === 200) {

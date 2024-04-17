@@ -16,7 +16,7 @@ const DisplayHotels = () => {
     useEffect(() => {
         const fetchHotels = async () => {
             try {
-                const response = await axios.get(`http://localhost:1234/hotels?page=1&pageSize=${pageSize}`);
+                const response = await axios.get(`https://enigmaescape-backend.onrender.com/hotels?page=1&pageSize=${pageSize}`);
                 console.log('Hotels data:', response.data);
 
                 const hotelsData = response.data.data.map(hotel => {
@@ -63,7 +63,7 @@ const DisplayHotels = () => {
     const handleEdit = async (id) => {
         try {
             
-            await axios.put(`http://localhost:1234/hotels/${id}`, );
+            await axios.put(`https://enigmaescape-backend.onrender.com/hotels/${id}`, );
             console.log('Successfully edited hotel with ID:', id);
            
         } catch (error) {
@@ -77,7 +77,7 @@ const DisplayHotels = () => {
             console.log('Hotel ID:', id); // Log the hotel ID
     
             // Send delete request to delete the hotel
-            const response = await axios.delete(`http://localhost:1234/Hotels/${id}`);
+            const response = await axios.delete(`https://enigmaescape-backend.onrender.com/Hotels/${id}`);
             
             // Check if the delete request was successful
             if (response.status === 200) {

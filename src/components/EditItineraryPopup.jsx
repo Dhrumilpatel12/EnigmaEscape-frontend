@@ -18,9 +18,9 @@ function EditItineraryPopup({ handleClose, editingItinerary, handleUpdate }) {
   const fetchCityData = async (city) => {
     setLoading(true);
     try {
-      const attractionsResponse = await axios.get(`http://localhost:1234/itinerary/attractions?city=${city}`);
-      const activitiesResponse = await axios.get(`http://localhost:1234/itinerary/activities?city=${city}`);
-      const hotelsResponse = await axios.get(`http://localhost:1234/itinerary/hotels?city=${city}`);
+      const attractionsResponse = await axios.get(`https://enigmaescape-backend.onrender.com/itinerary/attractions?city=${city}`);
+      const activitiesResponse = await axios.get(`https://enigmaescape-backend.onrender.com/itinerary/activities?city=${city}`);
+      const hotelsResponse = await axios.get(`https://enigmaescape-backend.onrender.com/itinerary/hotels?city=${city}`);
   
       const attractionNames = new Set(attractionsResponse.data.map(attraction => attraction.name));
       const activityNames = new Set(activitiesResponse.data.map(activity => activity.name));
@@ -56,7 +56,7 @@ function EditItineraryPopup({ handleClose, editingItinerary, handleUpdate }) {
     const fetchCities = async () => {
       setLoading(true);
       try {
-        const response = await axios.get('http://localhost:1234/Activity/cities');
+        const response = await axios.get('https://enigmaescape-backend.onrender.com/Activity/cities');
         setCities(response.data);
         setLoading(false);
       } catch (error) {
@@ -150,10 +150,10 @@ function EditItineraryPopup({ handleClose, editingItinerary, handleUpdate }) {
       };
   
       if (editingItinerary) {
-        await axios.put(`http://localhost:1234/itinerary/${editingItinerary.id}`, itineraryData);
+        await axios.put(`https://enigmaescape-backend.onrender.com/itinerary/${editingItinerary.id}`, itineraryData);
         handleUpdate(itineraryData);
       } else {
-        const response = await axios.post('http://localhost:1234/itinerary', itineraryData);
+        const response = await axios.post('https://enigmaescape-backend.onrender.com/itinerary', itineraryData);
         console.log('Itinerary saved:', response.data);
       }
 

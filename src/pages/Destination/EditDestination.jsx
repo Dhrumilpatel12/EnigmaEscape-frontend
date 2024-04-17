@@ -19,7 +19,7 @@ function EditDestination() {
     useEffect(() => {
         const fetchDestination = async () => {
             try {
-                const response = await axios.get(`http://localhost:1234/destination/${id}`);
+                const response = await axios.get(`https://enigmaescape-backend.onrender.com/destination/${id}`);
                 setDestination(response.data.data);
                 setFormData(response.data.data);
             } catch (error) {
@@ -38,7 +38,7 @@ function EditDestination() {
     const handleSubmit = async (e) => {
         e.preventDefault();
         try {
-            const response = await axios.put(`http://localhost:1234/destination/${id}`, formData);
+            const response = await axios.put(`https://enigmaescape-backend.onrender.com/destination/${id}`, formData);
             console.log(response.data);
             // Handle success
         } catch (error) {

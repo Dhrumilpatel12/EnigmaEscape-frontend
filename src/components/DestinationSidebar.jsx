@@ -18,8 +18,8 @@ const DestinationSidebar = ({
     const fetchData = async () => {
       try {
         const [citiesResponse, ratingsResponse] = await Promise.all([
-          axios.get('http://localhost:1234/Activity/cities'),
-          axios.get('http://localhost:1234/Activity/ratings'),
+          axios.get('https://enigmaescape-backend.onrender.com/Activity/cities'),
+          axios.get('https://enigmaescape-backend.onrender.com/Activity/ratings'),
         ]);
 
         setCities(citiesResponse.data);

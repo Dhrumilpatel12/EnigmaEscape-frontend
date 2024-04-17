@@ -20,9 +20,9 @@ function Service() {
         setIsLoading(true); // Set loading state to true before fetching data
 
         const [attractionsResponse, activitiesResponse, hotelsResponse] = await Promise.all([
-          fetch('http://localhost:1234/activity'),
-          fetch('http://localhost:1234/attraction'),
-          fetch('http://localhost:1234/hotels'),
+          fetch('https://enigmaescape-backend.onrender.com/activity'),
+          fetch('https://enigmaescape-backend.onrender.com/attraction'),
+          fetch('https://enigmaescape-backend.onrender.com/hotels'),
         ]);
 
         const attractionsData = await attractionsResponse.json();

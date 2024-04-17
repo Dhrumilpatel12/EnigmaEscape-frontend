@@ -20,7 +20,7 @@ function AddDestinationForm() {
             const cordinates = `${lat}and${lng}`;
 
             try {
-                const response = await axios.get(`http://localhost:1234/destination/address/${cordinates}`);
+                const response = await axios.get(`https://enigmaescape-backend.onrender.com/destination/address/${cordinates}`);
                console.log("response 123: ", response.data.data);
                setAttractions(response.data.data)
             } catch (error) {

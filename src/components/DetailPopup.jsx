@@ -8,7 +8,7 @@ const DetailPopup = ({ item, onClose, itemType }) => {
   useEffect(() => {
     const fetchItemDetails = async () => {
       try {
-        const response = await fetch(`http://localhost:1234/${itemType}/${itemType}s/${item._id}`);
+        const response = await fetch(`https://enigmaescape-backend.onrender.com/${itemType}/${itemType}s/${item._id}`);
         const data = await response.json();
         setItemDetails(data);
       } catch (error) {

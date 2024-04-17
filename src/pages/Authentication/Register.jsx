@@ -109,7 +109,7 @@ const Register = () => {
       return;
     }
     try {
-      const response = await fetch('http://localhost:1234/auth/register', {
+      const response = await fetch('https://enigmaescape-backend.onrender.com/auth/register', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',

@@ -10,7 +10,7 @@ function Trip() {
   useEffect(() => {
     const fetchAttractions = async () => {
       try {
-        const response = await axios.get('http://localhost:1234/Attraction');
+        const response = await axios.get('https://enigmaescape-backend.onrender.com/Attraction');
         const attractionsData = response.data.data; 
       
         console.log("images",response);
