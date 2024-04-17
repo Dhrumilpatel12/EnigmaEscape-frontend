@@ -1,0 +1,43 @@
+/* DestinationTable.css */
+
+.destination-table-container {
+    margin: 20px;
+}
+
+.destination-table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: transparent; /* Set table background to transparent */
+}
+
+.destination-table th,
+.destination-table td {
+    padding: 8px;
+    border: 1px solid #ddd;
+    text-align: left;
+}
+
+.destination-table th {
+    background-color: #f2f2f2;
+    color: #333; /* Set color for table header text */
+}
+
+
+.error-message {
+    color: #f00;
+    margin-top: 10px;
+}
+
+.destination-table-container input[type="text"] {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+.destination-table-container input[type="text"]:focus {
+    border-color: #007bff;
+    outline: none;
+}
