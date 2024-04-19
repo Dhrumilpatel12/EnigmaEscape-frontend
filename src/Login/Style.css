@@ -1,0 +1,53 @@
+
+.login-container {
+  background-size: cover;
+  background-position: center;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+}
+
+.left-content-inner {
+  text-align: center;
+}
+
+.login-inner {
+  background-color: #fff;
+  border-radius: 8px;
+  padding: 2rem;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+}
+
+.login-title {
+  font-weight: bold;
+}
+
+.input-field {
+  border: 1px solid #ccc;
+  border-radius: 25px;
+  padding: 0.5rem 1rem;
+}
+
+.input-field:focus {
+  box-shadow: none;
+  border-color: #007bff;
+}
+
+.login-btn {
+  background-color: #007bff;
+  border: none;
+  font-weight: bold;
+}
+
+.login-btn:hover {
+  background-color: #0056b3;
+}
+
+.forgot-password,
+.create-account {
+  font-size: 0.9rem;
+}
+
+.create-account a {
+  text-decoration: none;
+}

@@ -1,0 +1,120 @@
+.create-itinerary-popup {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 999;
+  }
+  
+  .create-itinerary-content {
+    background-color: rgba(255, 255, 255, 0.9);
+    padding: 2rem;
+    border-radius: 0.5rem;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    max-width: 600px;
+    width: 100%;
+    max-height: 80vh;
+    overflow-y: auto;
+  }
+  
+  h2 {
+    margin-top: 0;
+    text-align: center;
+  }
+  
+  .dropdown-container {
+    margin-bottom: 1rem;
+  }
+  
+  .dropdown-select {
+    width: 100%;
+    padding: 0.5rem;
+    border: 1px solid #ccc;
+    border-radius: 0.25rem;
+    font-size: 1rem;
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .city-select {
+    width: 100%;
+    padding: 0.5rem;
+    border: 1px solid #ccc;
+    border-radius: 0.25rem;
+    font-size: 1rem;
+  }
+  
+  .checkbox-option {
+    display: flex;
+    align-items: center;
+    margin-bottom: 0.5rem;
+  }
+  
+  .checkbox-option input[type="checkbox"] {
+    margin-right: 0.5rem;
+  }
+  
+  .dropdown-options {
+    max-height: 200px; /* Adjust the height as needed */
+    overflow-y: auto;
+  }
+  
+  .dropdown-options::-webkit-scrollbar {
+    width: 8px; /* Width of the scrollbar */
+  }
+  
+  .dropdown-options::-webkit-scrollbar-track {
+    background-color: #f1f1f1; /* Color of the scrollbar track */
+  }
+  
+  .dropdown-options::-webkit-scrollbar-thumb {
+    background-color: #888; /* Color of the scrollbar thumb */
+    border-radius: 4px; /* Rounded corners of the scrollbar thumb */
+  }
+  
+  .dropdown-options::-webkit-scrollbar-thumb:hover {
+    background-color: #555; /* Color of the scrollbar thumb on hover */
+  }
+  
+  .button-container {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 1rem;
+  }
+  
+  .submit-button,
+  .close-button {
+    padding: 0.5rem 1rem;
+    border: none;
+    border-radius: 0.25rem;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background-color 0.3s ease;
+  }
+  
+  .submit-button {
+    background-color: #007bff;
+    color: #fff;
+  }
+  
+  .submit-button:hover {
+    background-color: #0056b3;
+  }
+  
+  .close-button {
+    position: absolute;
+    top: 1rem; /* Adjust the top distance as needed */
+    right: 1rem; /* Adjust the right distance as needed */
+    background-color: #ccc;
+    color: #333;
+  }
+  
+  .close-button:hover {
+    background-color: #b3b3b3;
+  }
+  

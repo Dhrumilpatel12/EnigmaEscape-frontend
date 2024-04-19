@@ -1,0 +1,16 @@
+.table-container{
+    padding: 3rem 5rem;
+}
+.table-container>:nth-child(1)
+{
+    border-radius: 10px!important;
+    overflow: hidden!important;;
+}
+.MuiTableRow-root, .MuiTableCell-root{
+    border: none!important;
+}
+
+.material-table-container {
+    width: 90%; /* Set width to 90% */
+    overflow-x: auto; /* Enable horizontal scrolling */
+}

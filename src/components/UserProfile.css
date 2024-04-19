@@ -1,0 +1,64 @@
+
+.user-profile {
+    width: 50%;
+    margin-left: 25%;
+   margin-top: 100px;
+    padding: 20px;
+
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .user-profile h1 {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .user-profile label {
+    display: block;
+    margin-bottom: 5px;
+  }
+  
+  .user-profile input {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+  }
+  
+  .user-profile button {
+    width: 100%;
+    padding: 10px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .user-profile button:hover {
+    background-color: #0056b3;
+  }
+  
+  .user-profile p {
+    color: green;
+    font-weight: bold;
+    margin-top: 10px;
+  }
+  
+  .user-profile a {
+    display: block;
+    text-align: center;
+    margin-top: 20px;
+    text-decoration: none;
+    color: #007bff;
+    transition: color 0.3s ease;
+  }
+  
+  .user-profile a:hover {
+    color: #0056b3;
+  }
+  

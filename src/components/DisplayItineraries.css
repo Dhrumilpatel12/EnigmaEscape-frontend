@@ -1,0 +1,17 @@
+.itineraries-container {
+  margin: 20px;
+}
+
+.error-message {
+  color: red;
+  font-weight: bold;
+}
+
+.material-table-container {
+  margin-top: 20px;
+}
+
+.square-image {
+  object-fit: cover;
+  border-radius: 4px;
+}

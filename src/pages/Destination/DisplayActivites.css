@@ -1,0 +1,40 @@
+/* DisplayActivities.css */
+.activities-container {
+    display: flex;
+    justify-content: center; /* Adjust the top padding */
+}
+
+.material-table-container {
+    width: 90%; /* Set width to 90% */
+    overflow-x: auto; /* Enable horizontal scrolling */
+}
+
+.activities-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.square-image {
+    object-fit: cover; /* Cover the entire space allocated for the image */
+    border-radius: 8px; /* Apply border radius for rounded corners */
+}
+
+.activities-table th,
+.activities-table td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+}
+
+.activities-table th {
+    background-color: #f2f2f2;
+}
+
+.activities-table tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+.error-message {
+    color: red;
+    margin-top: 10px;
+}

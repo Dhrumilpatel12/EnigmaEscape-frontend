@@ -1,0 +1,33 @@
+.view-destination {
+    display: flex;
+  }
+  
+  .sidebar {
+    width: 200px; /* Adjust width as needed */
+    padding: 20px;
+    background-color: #f0f0f0;
+  }
+  
+  .city-filter {
+    margin-top: 10px;
+  }
+  
+  .city-checkbox {
+    margin-bottom: 5px;
+  }
+  
+  .content {
+    flex: 1;
+    padding: 20px;
+  }
+  
+  .navigation select {
+    padding: 8px;
+    font-size: 16px;
+    margin-bottom: 20px;
+  }
+  
+  .category-content h2 {
+    margin-bottom: 10px;
+  }
+  

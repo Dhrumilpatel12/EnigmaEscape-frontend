@@ -1,0 +1,98 @@
+.login-container {
+    min-height: 100vh;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .card {
+    width: 100%;
+    max-width: 400px;
+    border: none;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    background-color: #fff; /* Added background color */
+  }
+  
+  .card-body {
+    padding: 2rem;
+  }
+  
+  .card-title {
+    text-align: center;
+    font-size: 28px; /* Increased font size */
+    font-weight: bold;
+    margin-bottom: 2rem;
+  }
+  
+  .form-group {
+    margin-bottom: 1.5rem;
+  }
+  
+  .form-label {
+    font-weight: bold;
+  }
+  
+  .form-control {
+    border: 1px solid #ced4da;
+    border-radius: 8px;
+    padding: 0.75rem;
+    height: 50px; /* Set the height of all form controls */
+  }
+  
+  .form-control:focus {
+    border-color: #007bff;
+    box-shadow: none;
+  }
+  
+  .password-toggle-group {
+    position: relative;
+  }
+  
+  .password-toggle-icon {
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+    color: #6c757d;
+  }
+  
+  .password-toggle-icon:hover {
+    color: #343a40;
+  }
+  
+  .alert {
+    margin-bottom: 1rem;
+  }
+  
+  .text-center {
+    text-align: center;
+  }
+  
+  .create-account {
+    font-size: 0.9rem;
+  }
+  
+  .create-account a {
+    text-decoration: none;
+    color: #007bff;
+  }
+  
+  .create-account a:hover {
+    text-decoration: underline;
+  }
+  
+  .btn-primary {
+    background-color: #007bff;
+    border: none;
+    border-radius: 8px;
+    padding: 0.75rem 1.5rem;
+    font-size: 1rem;
+  }
+  
+  .btn-primary:hover {
+    background-color: #0056b3;
+  }
+  

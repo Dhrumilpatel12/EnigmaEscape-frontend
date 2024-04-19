@@ -1,0 +1,130 @@
+/* NavbarStyles.css */
+*{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.NavbarItems {
+    background-color: #e6e5e5; 
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    padding: 0.5rem 1rem;
+    position: relative;
+}
+
+.navbar-logo img {
+    height: 70px; 
+    width: auto; 
+}
+.profile-dropdown {
+    position: relative;
+  }
+  
+  .profile-dropdown .dropdown-menu {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    display: none;
+    background-color: #e6e5e5; 
+    padding: 10px;
+    border: 1px solid #ccc;
+  }
+  
+  .profile-dropdown:hover .dropdown-menu {
+    display: block;
+  }
+  
+  .dropdown-menu li {
+    margin-bottom: 5px;
+  }
+  
+  
+.nav-menu {
+    display: flex;
+    justify-content: space-between;
+    width: auto; 
+    flex-grow: 1;
+}
+
+.nav-links {
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+}
+.dropdown {
+   
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  width: 200px; /* Adjust width as necessary */
+}
+
+.dropdown-item {
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+  padding: 10px;
+  border-bottom: 1px solid #ddd; /* Optional border for items */
+}
+
+.dropdown-item:last-child {
+  border-bottom: none;
+}
+
+.dropdown-item a {
+  text-decoration: none;
+  color: black; /* Adjust color as necessary */
+  display: block;
+}
+
+.dropdown-item a:hover {
+  background-color: #f1f1f1; /* Hover background color */
+}
+
+.menu-icon {
+    display: none;
+    cursor: pointer; /* Makes it clear the icon is clickable */
+}
+
+/* Responsive menu icon and adjustments for mobile */
+@media screen and (max-width: 960px) {
+    .menu-icon {
+        display: block;
+        position: absolute;
+        top: 0; /* Align with the top of navbar */
+        right: 0;
+        transform: translate(-100%, 60%); /* Adjusted for better alignment */
+        font-size: 1.8rem; /* Increase size for better tap targets */
+    }
+
+    .nav-menu {
+        display: grid;
+        grid-template-columns: 1fr; /* Ensures items stack vertically */
+        width: 100%;
+        position: fixed; /* Changed from absolute to fixed for full-screen overlay */
+        top: 80px; /* Height of the navbar */
+        left: -100%;
+        opacity: 0; /* Start hidden */
+        transition: all 0.5s ease;
+        z-index: 9; /* Ensure menu is above other content */
+        background-color: #d7d6d6; 
+        
+    }
+
+    .nav-menu.active {
+        left: 0;
+        opacity: 1;
+        padding-bottom: 20px; /* Adds some space at the bottom */
+    }
+
+    .nav-links {
+        padding: 1.2rem; /* Increase padding for better tap targets */
+        border-bottom: 1px solid #fff; /* Adds a divider between menu items */
+        text-align: center; /* Center align the text */
+    }
+
+    .navbar-logo {
+        width: 100%; /* Ensure logo container takes full width */
+        justify-content: space-between; /* Adjust alignment of logo */
+    }
+}
+

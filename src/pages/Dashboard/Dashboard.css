@@ -1,0 +1,99 @@
+.dashboard-container {
+    padding: 20px;
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.dashboard-info {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.info-card {
+    flex: 1;
+    padding: 20px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.info-card h2 {
+    margin-bottom: 10px;
+}
+
+.dashboard-summary {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+.dashboard-summary h2 {
+    margin-bottom: 10px;
+}
+
+.dashboard-actions {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 20px;
+}
+
+.dashboard-actions h2 {
+    margin-bottom: 10px;
+}
+
+.dashboard-actions ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.dashboard-actions ul li {
+    margin-bottom: 10px;
+    cursor: pointer;
+    color: #007bff;
+}
+
+.dashboard-actions ul li:hover {
+    text-decoration: underline;
+}
+
+.App {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+    gap: 2vw;
+    flex-wrap: wrap;
+    background-color: #ddd;
+  }
+  
+  .dataCard {
+    background-color: #efefef;
+    border-radius: 0.5em;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    padding: 1em;
+  }
+  
+  .revenueCard {
+    width: 92%;
+    height: 20rem;
+  }
+  
+  .customerCard {
+    width: 50%;
+    height: 20rem;
+  }
+  
+  .categoryCard {
+    width: 40%;
+    height: 20rem;
+  }
+  
