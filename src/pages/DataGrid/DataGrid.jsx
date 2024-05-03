@@ -13,7 +13,7 @@ const DataGrid = () => {
     // Adjust this URL to where your API is hosted and the correct endpoint
     const fetchUserData = async () => {
         try {
-            const response = await axios.get('http://localhost:1234/user/users');
+            const response = await axios.get('https://enigmaescape-backend.onrender.com/user/users');
             setUserData(response.data);
         } catch (error) {
             console.log(response.data)
@@ -23,7 +23,7 @@ const DataGrid = () => {
     };
     const handleDelete = async (id) => {
         try {
-            await axios.delete(`http://localhost:1234/user/users/${id}`);
+            await axios.delete(`https://enigmaescape-backend.onrender.com/user/users/${id}`);
             const updatedUsers = userData.filter(user => user._id !== id);
             setUserData(updatedUsers);
             console.log('Successfully deleted user with ID:', id);

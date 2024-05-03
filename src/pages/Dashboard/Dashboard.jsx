@@ -12,9 +12,9 @@ const AdminDashboard = () => {
     const fetchData = async () => {
       try {
         const [activityResponse, attractionResponse, hotelResponse] = await Promise.all([
-          axios.get('http://localhost:1234/activity'),
-          axios.get('http://localhost:1234/attraction'),
-          axios.get('http://localhost:1234/hotels')
+          axios.get('https://enigmaescape-backend.onrender.com/activity'),
+          axios.get('https://enigmaescape-backend.onrender.com/attraction'),
+          axios.get('https://enigmaescape-backend.onrender.com/hotels')
         ]);
 
         const activityData = activityResponse.data.data.map(item => ({...item, category: 'Activity'}));

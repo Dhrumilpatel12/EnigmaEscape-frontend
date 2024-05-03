@@ -9,7 +9,7 @@ function SearchDestination() {
 
     const handleSearch = async () => {
         try {
-            const response = await axios.get(`http://localhost:1234/destination/search/${searchTerm}`);
+            const response = await axios.get(`https://enigmaescape-backend.onrender.com/destination/search/${searchTerm}`);
             setSearchResults(response.data.data);
         } catch (error) {
             console.error('Error searching destinations:', error);

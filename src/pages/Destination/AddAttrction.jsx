@@ -16,7 +16,7 @@ function AddAttraction() {
         const fetchAttractions = async () => {
             try {
                 console.log('in try')
-                const response = await axios.get(`http://localhost:1234/Attraction/address/${coordinates.lat}and${coordinates.lng}`);
+                const response = await axios.get(`https://enigmaescape-backend.onrender.com/Attraction/address/${coordinates.lat}and${coordinates.lng}`);
                 console.log("response 123: ", response.data.data);
                 setAttractions(response.data.data);
             } catch (error) {

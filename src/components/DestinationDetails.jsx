@@ -18,9 +18,9 @@ const DestinationDetails = () => {
     const fetchData = async () => {
       try {
         const [activitiesResponse, attractionsResponse, hotelsResponse] = await Promise.all([
-          axios.get('http://localhost:1234/activity'),
-          axios.get('http://localhost:1234/attraction'),
-          axios.get('http://localhost:1234/hotels'),
+          axios.get('https://enigmaescape-backend.onrender.com/activity'),
+          axios.get('https://enigmaescape-backend.onrender.com/attraction'),
+          axios.get('https://enigmaescape-backend.onrender.com/hotels'),
         ]);
 
         setActivities(activitiesResponse.data.data);

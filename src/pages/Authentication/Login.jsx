@@ -31,7 +31,7 @@ const Login = () => {
     }
   
     try {
-      const response = await fetch('http://localhost:1234/auth/login', {
+      const response = await fetch('https://enigmaescape-backend.onrender.com/auth/login', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',

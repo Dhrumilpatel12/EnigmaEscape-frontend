@@ -11,7 +11,7 @@ function Showdestination() {
     useEffect(() => {
         const fetchDestinations = async () => {
             try {
-                const response = await axios.get('http://localhost:1234/destination');
+                const response = await axios.get('https://enigmaescape-backend.onrender.com/destination');
                 setDestinations(response.data.data);
             } catch (error) {
                 console.error('Error fetching destinations:', error);
@@ -24,7 +24,7 @@ function Showdestination() {
 
     const handleDelete = async (id) => {
         try {
-            await axios.delete(`http://localhost:1234/destination/${id}`);
+            await axios.delete(`https://enigmaescape-backend.onrender.com/destination/${id}`);
             setDestinations(destinations.filter(destination => destination._id !== id));
         } catch (error) {
             console.error('Error deleting destination:', error);

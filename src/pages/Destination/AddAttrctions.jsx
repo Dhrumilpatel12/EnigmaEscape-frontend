@@ -27,7 +27,7 @@ const AttractionForm = ({ selectedAttraction, setSelectedAttraction }) => {
 
     const fetchCities = async () => {
         try {
-            const response = await axios.get('http://localhost:1234/attraction/cities');
+            const response = await axios.get('https://enigmaescape-backend.onrender.com/attraction/cities');
             setCities(response.data);
         } catch (error) {
             console.error('Error fetching cities:', error);
@@ -36,7 +36,7 @@ const AttractionForm = ({ selectedAttraction, setSelectedAttraction }) => {
 
     const fetchAttractionTypes = async () => {
         try {
-            const response = await axios.get('http://localhost:1234/attraction/types');
+            const response = await axios.get('https://enigmaescape-backend.onrender.com/attraction/types');
             setAttractionTypes(response.data);
         } catch (error) {
             console.error('Error fetching attraction types:', error);
@@ -52,11 +52,11 @@ const AttractionForm = ({ selectedAttraction, setSelectedAttraction }) => {
         e.preventDefault();
         try {
             if (formData._id) {
-                await axios.put(`http://localhost:1234/attraction/${formData._id}`, formData);
+                await axios.put(`https://enigmaescape-backend.onrender.com/attraction/${formData._id}`, formData);
                 alert('Attraction updated successfully!');
                 setSelectedAttraction(null); // Reset selected attraction
             } else {
-                await axios.post('http://localhost:1234/attraction', formData);
+                await axios.post('https://enigmaescape-backend.onrender.com/attraction', formData);
                 alert('Attraction added successfully!');
             }
             setFormData({

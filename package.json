@@ -9,7 +9,7 @@
     "preview": "vite preview"
   },
   "dependencies": {
-    "@ant-design/icons": "^3.4.0",
+    "@ant-design/icons": "^3.3.10",
     "@asseinfo/react-kanban": "^2.2.0",
     "@emailjs/browser": "^4.3.3",
     "@emotion/react": "^11.11.4",

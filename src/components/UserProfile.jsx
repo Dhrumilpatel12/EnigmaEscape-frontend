@@ -26,7 +26,7 @@ class UserProfile extends Component {
     saveProfile = async () => {
         const { userId, username, lastname, email, phone } = this.state;
         try {
-            const response = await axios.put(`http://localhost:1234/user/users/${userId}`, {
+            const response = await axios.put(`https://enigmaescape-backend.onrender.com/user/users/${userId}`, {
                 username,
                 lastname,
                 email,

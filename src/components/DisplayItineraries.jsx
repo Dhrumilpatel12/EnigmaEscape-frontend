@@ -18,7 +18,7 @@ const DisplayItineraries = ({ userId }) => {
       const fetchItineraries = async () => {
         try {
 // Make sure to replace 'userId' with the actual user ID
-const response = await axios.get(`http://localhost:1234/itinerary?userId=${userId}`);
+const response = await axios.get(`https://enigmaescape-backend.onrender.com/itinerary?userId=${userId}`);
           const itinerariesData = response.data.map(itinerary => ({
             city: itinerary.city,
             attractions: itinerary.attractions.join(', '),
@@ -69,7 +69,7 @@ const response = await axios.get(`http://localhost:1234/itinerary?userId=${userI
     //   };
     const handleDelete = async (id) => {
         try {
-            await axios.delete(`http://localhost:1234/itinerary/${id}`);
+            await axios.delete(`https://enigmaescape-backend.onrender.com/itinerary/${id}`);
             const updatedItineraries = itineraries.filter(itinerary => itinerary.id !== id);
             setItineraries(updatedItineraries);
             console.log('Successfully deleted itinerary with ID:', id);

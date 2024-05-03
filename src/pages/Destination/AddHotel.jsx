@@ -20,7 +20,7 @@ function AddHotel() {
             setCoordinates({ lat, lng });
     
             // Fetch hotels based on the selected city
-            const response = await axios.get(`http://localhost:1234/Hotels/address/${cordinates}`);
+            const response = await axios.get(`https://enigmaescape-backend.onrender.com/Hotels/address/${cordinates}`);
             console.log("response data:", response.data); 
             setHotels(response.data.data);
         } catch (error) {
